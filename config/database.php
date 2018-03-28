@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,6 +32,19 @@ return [
     */
 
     'connections' => [
+
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => ('54.169.145.1'),
+            'port'     => ('27017'),
+            'database' => ('seniorproject'),
+            'username' => ('seniorProject'),
+            'password' => ('seniorProject'),
+            'charset' => 'utf8',
+            'collection' => 'utf8_unicode_ci',
+            'options'  => [
+                'database' => 'admin' ]
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
