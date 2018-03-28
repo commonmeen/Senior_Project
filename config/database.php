@@ -35,15 +35,13 @@ return [
 
         'mongodb' => [
             'driver'   => 'mongodb',
-            'host'     => ('54.169.145.1'),
-            'port'     => ('27017'),
-            'database' => ('seniorproject'),
-            'username' => ('seniorProject'),
-            'password' => ('seniorProject'),
+            'host'     => env('DB_HOST'),
+            'port'     => env('DB_PORT'),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
             'charset' => 'utf8',
             'collection' => 'utf8_unicode_ci',
-            'options'  => [
-                'database' => 'admin' ]
         ],
 
         'sqlite' => [
